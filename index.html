@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube PiP Mode</title>
+    <style>
+        /* Apply a full screen layout with no margin or padding */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container to wrap content */
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 900px; /* Maximum width for larger screens */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Set iframe width and height */
+        iframe {
+            width: 100%; /* Full width of the container */
+            height: 500px; /* Fixed height of 500px */
+            max-width: 100%; /* Ensure responsiveness */
+            border: none;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>YouTube Video with Picture-in-Picture Mode</h1>
+        <iframe 
+            id="youtubePlayer" 
+            src="https://www.youtube.com/embed/eILUmCJhl64" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <p>Click the "PiP" icon in the YouTube video controls to enable Picture-in-Picture mode (if supported by your browser).</p>
+    </div>
+
+</body>
+</html>
